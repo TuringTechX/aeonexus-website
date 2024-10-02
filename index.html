@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSwap & Aeonexus - Climate Solutions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <img src="assets/logo.png" alt="Aeonexus Logo" class="logo" />
+        <h1>Aeonexus - Climate Solutions for a Better Tomorrow</h1>
+        <nav>
+          <a href="#summary">About Aeonexus</a>
+          <a href="#features">Aeonexus Features</a>
+          <a href="#ecoswap">EcoSwap Features</a>
+          <a href="#calculator">Carbon Calculator</a>
+        </nav>
+      </header>
+
+      <!-- Aeonexus Section -->
+      <section id="summary">
+        <h2>About Aeonexus</h2>
+        <p>Aeonexus addresses climate change through mitigation, adaptation, and biodiversity impact. It offers tools for reducing emissions, adapting to environmental risks, and supporting ecosystem conservation.</p>
+      </section>
+
+      <section id="features">
+        <h2>Our Key Features</h2>
+        <div class="feature">
+          <h3>Mitigation</h3>
+          <p>Reduce GHG emissions through carbon tracking, renewable energy trading, and offset integration. Gamify sustainable actions to encourage behavior change.</p>
+        </div>
+        <div class="feature">
+          <h3>Adaptation</h3>
+          <p>Access real-time data on environmental risks and receive health recommendations to adapt to climate impacts. Supports sustainable agriculture and energy efficiency.</p>
+        </div>
+        <div class="feature">
+          <h3>Biodiversity Impact</h3>
+          <p>Promotes circular economy and biodiversity conservation through ecosystem restoration and local/global environmental projects.</p>
+        </div>
+        <button id="loadMore">Load More Features</button>
+      </section>
+
+      <!-- EcoSwap Section -->
+      <section id="ecoswap">
+        <span class="trusted-by-companies">Trusted by These Companies</span>
+        <div class="frame">
+          <div class="frame-1"><div class="company-logo"></div></div>
+          <div class="frame-2"><div class="company-logo-3"></div></div>
+          <div class="frame-4"><div class="company-logo-5"></div></div>
+          <div class="frame-6"><div class="company-logo-7"></div></div>
+          <div class="frame-8"><div class="company-logo-9"></div></div>
+        </div>
+        <div class="frame-a">
+          <div class="auto-layer-row-a">
+            <span class="explore-top-listing">Explore Top Listings</span>
+            <div class="frame-b">
+              <span class="explore-listings">Explore Listings</span>
+              <div class="frame-c"></div>
+            </div>
+          </div>
+          <div class="frame-d">
+            <div class="frame-e">
+              <div class="frame-f">
+                <div class="rectangle"></div>
+                <div class="frame-10">
+                  <span class="clothings">Clothings</span>
+                  <div class="frame-11"><div class="arrow-right"></div></div>
+                </div>
+              </div>
+              <div class="frame-12">
+                <div class="rectangle-13"></div>
+                <div class="frame-14">
+                  <span class="furnitures">Furnitures</span>
+                  <div class="frame-15"><div class="arrow-right-16"></div></div>
+                </div>
+              </div>
+              <div class="frame-17">
+                <div class="rectangle-18"></div>
+                <div class="frame-19">
+                  <span class="books">Books</span>
+                  <div class="frame-1a"><div class="arrow-right-1b"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider"></div>
+        </div>
+        <span class="how-it-works">How it Works</span>
+        <span class="embark-on-green-journey">Embark on Your Green Journey</span>
+        <div class="frame-1c">
+          <div class="frame-1d">
+            <div class="img-6"></div>
+            <div class="frame-1e">
+              <span class="create-your-profile">Create Your Profile</span>
+              <span class="rooted-in-green-living">Rooted in Green Living: Join EcoSwap's Eco-Conscious Community</span>
+            </div>
+          </div>
+          <div class="frame-1f">
+            <div class="img-7"></div>
+            <div class="frame-20">
+              <span class="find-your-match">Find Your Match</span>
+              <span class="discover-swap-thrive">Discover, Swap, Thrive: Sustainable Treasures Await on EcoSwap</span>
+            </div>
+          </div>
+          <div class="frame-21">
+            <div class="img-8"></div>
+            <div class="frame-22">
+              <span class="initiate-a-swap">Initiate a Swap</span>
+              <span class="connect-swap-sustain">Connect, Swap, Sustain: Your EcoSwap Adventure Begins Here</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carbon Footprint Calculator Section -->
+      <section id="calculator">
+        <h2>Carbon Footprint Calculator</h2>
+        <p>Estimate your monthly carbon emissions by entering your details below:</p>
+        <label for="electricity">Electricity Usage (kWh): </label>
+        <input type="number" id="electricity" placeholder="e.g., 300">
+        <br>
+        <label for="transportation">Transportation (miles driven): </label>
+        <input type="number" id="transportation" placeholder="e.g., 500">
+        <br>
+        <label for="waste">Waste Produced (kg): </label>
+        <input type="number" id="waste" placeholder="e.g., 50">
+        <br>
+        <button onclick="calculateFootprint()">Calculate</button>
+        <p id="result"></p>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 Aeonexus & EcoSwap. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Generated by Codia AI -->
+  </body>
+</html>
