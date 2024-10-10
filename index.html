@@ -1,107 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoSwap & Aeonexus - Climate Solutions</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <img src="assets/logo.png" alt="Aeonexus Logo" class="logo" />
-        <h1>Aeonexus - Climate Solutions for a Better Tomorrow</h1>
-        <nav>
-          <ul>
-            <li><a href="#summary">About Aeonexus</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#ecoswap">EcoSwap</a></li>
-            <li><a href="#calculator">Carbon Calculator</a></li>
-          </ul>
-        </nav>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aeonexus - Uniting Knowledge, Shaping the Future">
+    <title>Aeonexus | Global Collaboration Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Aeonexus</h1>
+        <p>Uniting Knowledge, Shaping the Future</p>
+        <a href="#about" class="cta-btn">Join the Global Collaboration</a>
     </header>
 
-    <!-- About Aeonexus Section -->
-    <section id="summary" class="section">
-      <div class="container">
+    <!-- About Section -->
+    <section id="about">
         <h2>About Aeonexus</h2>
-        <p>Aeonexus tackles climate change through mitigation, adaptation, and biodiversity impact. Our tools help reduce emissions, adapt to environmental risks, and conserve ecosystems.</p>
-      </div>
+        <p>Combining the wisdom of ages with the innovation of modern technology, Aeonexus is the global hub for collaboration on the world's most pressing challenges.</p>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="section">
-      <div class="container">
-        <h2>Key Features</h2>
-        <article class="feature">
-          <h3>Mitigation</h3>
-          <p>Track carbon emissions, participate in renewable energy trading, and offset your carbon footprint through integrated solutions.</p>
-        </article>
-        <article class="feature">
-          <h3>Adaptation</h3>
-          <p>Real-time environmental data helps you adapt to climate impacts, improve agriculture resilience, and optimize energy use.</p>
-        </article>
-        <article class="feature">
-          <h3>Biodiversity</h3>
-          <p>We promote circular economy practices and support biodiversity through ecosystem restoration and local/global conservation projects.</p>
-        </article>
-        <button id="loadMore">Load More Features</button>
-      </div>
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-card">
+            <h3>Global Collaboration Hub</h3>
+            <p>Connect and collaborate with individuals and organizations worldwide.</p>
+            <button onclick="showMore('collab')">Learn More</button>
+            <div id="collab" class="feature-more">Details about the collaboration hub...</div>
+        </div>
+        <div class="feature-card">
+            <h3>Knowledge Library</h3>
+            <p>A vast library combining ancient wisdom and modern insights.</p>
+            <button onclick="showMore('library')">Learn More</button>
+            <div id="library" class="feature-more">Details about the knowledge library...</div>
+        </div>
     </section>
 
-    <!-- EcoSwap Section -->
-    <section id="ecoswap" class="section">
-      <div class="container">
-        <h2>EcoSwap Features</h2>
-        <p>Trusted by companies worldwide, EcoSwap helps users exchange sustainable goods and services. Explore top listings and start swapping today!</p>
-        
-        <div class="explore-listings">
-          <h3>Top Categories</h3>
-          <ul>
-            <li><span>Clothings</span></li>
-            <li><span>Furnitures</span></li>
-            <li><span>Books</span></li>
-          </ul>
-        </div>
-
-        <div class="how-it-works">
-          <h3>How It Works</h3>
-          <ol>
-            <li><strong>Create Your Profile</strong> - Join the EcoSwap community rooted in green living.</li>
-            <li><strong>Find Your Match</strong> - Discover sustainable treasures on EcoSwap.</li>
-            <li><strong>Initiate a Swap</strong> - Connect, swap, and sustain through your green journey.</li>
-          </ol>
-        </div>
-      </div>
+    <!-- Community Section -->
+    <section id="community">
+        <h2>Join the Aeonexus Communities</h2>
+        <p>Be part of a global network tackling climate change, health equity, and more.</p>
     </section>
 
-    <!-- Carbon Footprint Calculator Section -->
-    <section id="calculator" class="section">
-      <div class="container">
-        <h2>Carbon Footprint Calculator</h2>
-        <p>Estimate your monthly carbon emissions:</p>
-        <label for="electricity">Electricity Usage (kWh):</label>
-        <input type="number" id="electricity" placeholder="e.g., 300" />
-        
-        <label for="transportation">Transportation (miles driven):</label>
-        <input type="number" id="transportation" placeholder="e.g., 500" />
-        
-        <label for="waste">Waste Produced (kg):</label>
-        <input type="number" id="waste" placeholder="e.g., 50" />
-        
-        <button onclick="calculateFootprint()">Calculate</button>
-        <p id="result"></p>
-      </div>
+    <!-- Call to Action Section -->
+    <section id="cta">
+        <blockquote>“Together, we can build a sustainable and abundant future.”</blockquote>
+        <a href="#" class="cta-btn">Download the App</a>
+        <a href="#" class="cta-btn">Join the Movement</a>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <p>&copy; 2024 Aeonexus & EcoSwap. All Rights Reserved.</p>
-      </div>
+        <p>&copy; 2024 Aeonexus. All rights reserved.</p>
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </nav>
     </footer>
-  </body>
+
+    <script src="scripts/main.js"></script>
+</body>
 </html>
