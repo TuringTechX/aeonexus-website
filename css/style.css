@@ -1,16 +1,54 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
-.hero {
-  background-image: url('hero-image.jpg');
+h1, h2, h3 {
+  color: #007BFF;
   text-align: center;
-  padding: 100px 20px;
-  color: #fff;
+}
+
+p {
+  color: #555;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../assets/hero-image.jpg');
   background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  z-index: 1;
 }
 
 .cta-btn {
@@ -19,11 +57,32 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  z-index: 1;
 }
 
-#about, #features, #community, #cta {
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Section */
+#about {
   padding: 50px 20px;
+  background-color: #fff;
   text-align: center;
+}
+
+/* Features Section */
+#features {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .feature-card {
@@ -31,16 +90,94 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .feature-more {
   display: none;
+  padding-top: 10px;
 }
 
+/* Community Section */
+#community {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.community-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.community-logos img {
+  max-width: 100px;
+}
+
+/* CTA Section */
+#cta {
+  background-color: #007BFF;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#cta blockquote {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#cta .cta-btn {
+  background-color: #fff;
+  color: #007BFF;
+  border: 2px solid #fff;
+  margin: 10px;
+}
+
+#cta .cta-btn:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+footer img.footer-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1.2rem;
+  }
+
+  .feature-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .cta-btn {
+      padding: 10px 15px;
+  }
 }

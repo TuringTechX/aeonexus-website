@@ -7,3 +7,5 @@ function showMore(id) {
         element.style.display = "none";
     }
 }
+
+// Additional interactivity can be added here in future (e.g., AJAX for loading dynamic content)
